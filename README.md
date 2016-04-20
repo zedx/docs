@@ -1,2 +1,1 @@
-# docs
-ZEDx docs
+# Documentation ZEDx
