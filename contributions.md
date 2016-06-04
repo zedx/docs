@@ -1,7 +1,7 @@
 # Contribution Guide
 
 - [Bug Reports](#bug-reports)
-- [Which Branch?](#which-branch)
+- [Pull Request Guidelines](#pull-request-guidelines)
 - [Security Vulnerabilities](#security-vulnerabilities)
 - [Coding Style](#coding-style)
     - [PHPDoc](#phpdoc)
@@ -33,16 +33,16 @@ Remember: the goal of a bug report is to make it easy for us to replicate the bu
 
 Once you've posted your report, we'd ask that you please *follow the discussion* that you created and wait patiently. We may need to ask for further details or clarification; but we've always got plenty to do, and it could be a while before we can give your report the time it deserves.
 
-<a name="which-branch"></a>
-## Which Branch?
+<a name="pull-request-guidelines"></a>
+## Pull Request Guidelines
 
-**All** bug fixes should be sent to the latest stable branch or to the current LTS branch (3.0). Bug fixes should **never** be sent to the `master` branch unless they fix features that exist only in the upcoming release.
+- Read the [Contributor License Agreement](#contributor-license-agreement).
 
-**Minor** features that are **fully backwards compatible** with the current ZEDx release may be sent to the latest stable branch.
+- Checkout a topic branch from `develop` and merge back against `develop`.
 
-**Major** new features should always be sent to the `master` branch, which contains the upcoming ZEDx release.
+- [Squash the commits](http://davidwalsh.name/squash-commits-git) if there are too many small ones.
 
-If you are unsure if your feature qualifies as a major or minor, please ask `@zorx` in the [forum support](http://zedx.io).
+- Follow the [code style](#coding-style).
 
 <a name="security-vulnerabilities"></a>
 ## Security Vulnerabilities
