@@ -16,7 +16,7 @@ Found a bug already? Wonderful! We'd love to hear about it &mdash; but first you
 
 <div class="content-list" markdown="1">
 - Search our [Support forum](http://discuss.zedx.io/t/bug) to see if it's already been reported.
-- We could be working on a fix, so search our [issue tracker](https://github.com/zedx/zedx/issues) too.
+- We could be working on a fix, so search our [issue tracker](https://github.com/zedx/core/issues) too.
 </div>
 
 If you've searched *thoroughly* and come up empty-handed, we'll welcome your report. If it's just a simple issue (a misspelled word or graphics glitch, for example) skip to the next paragraph. But if you're seeing errors, or something is clearly broken, we'll need you to gather some information first. Please head over to our [Troubleshooting](http://zedx.io/docs/troubleshooting) guide and follow the instructions there. Collect as much info as you can!
