@@ -6,7 +6,6 @@
         - [Wizard installation](#wizard-installation)
         - [Command-line installation](#command-line-installation)
 - [Post-installation steps](#post-installation-steps)
-    - [Delete installation files](#delete-installation-files)
     - [Setting up the scheduler](#Setting-up-the-scheduler)
 
 <a name="installation"></a>
@@ -75,14 +74,6 @@ You can sign in to the administration area via the `/zxadmin` route.
 ## Post-installation steps
 
 There are some things you may need to set up after the installation is complete.
-
-<a name="delete-installation-files"></a>
-### Delete installation files
-
-If you have used the [Wizard installation](#wizard-installation) you should delete the installation files for security reasons. ZEDx will never delete files from your system automatically, so you should delete these files and directories manually:
-
-    install_files/      <== Installation directory
-    install.php         <== Installation script
 
 <a name="Setting-up-the-scheduler"></a>
 ### Setting up the scheduler
