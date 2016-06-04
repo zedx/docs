@@ -54,9 +54,11 @@ Somewhere along the way you may get an idea about what's causing your issue, and
 
 If it looks like you're going to need help solving the problem, it's time to get serious about collecting data. Look for error messages or other information about the problem in the following places:
 
+<div class="content-list" markdown="1">
 - Displayed on the actual page
 - Displayed in the browser console
 - Recorded in the server's error log
+</div>
 
 Copy any messages to a text file and jot down a few notes about *when* the error occurred, *what* you were doing at the time, and so on. Be sure to include any insights you may have gleaned about the conditions under which the issue does and doesn't occur. Add as much information as possible about your server environment: OS version, web server version, PHP version and handler, et cetera.
 
