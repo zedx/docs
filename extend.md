@@ -17,4 +17,4 @@ Well, if you want to create something that doesn't need any database installatio
 
 A module has the ability to create its own database table, a custom uri etc. for example a `Blog`.
 
-    You also can create many widgets inside your module.
+> You also can create many widgets inside your module.
