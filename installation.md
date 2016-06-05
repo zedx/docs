@@ -30,6 +30,8 @@ ZEDx has some server requirements for web hosting:
 
 As of PHP 5.5, some OS distributions may require you to manually install the PHP JSON extension. When using Ubuntu, this can be done via `apt-get install php5-json`.
 
+> Your server must allow Outgoing connections to https://api.zedx.io
+
 <a name="installing-zedx"></a>
 ### Installing ZEDx
 
