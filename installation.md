@@ -19,6 +19,7 @@ ZEDx has some server requirements for web hosting:
 <div class="content-list" markdown="1">
 - PHP >= 5.5.9
 - OpenSSL PHP Extension
+- proc_open Function
 - PDO PHP Extension
 - Mbstring PHP Extension
 - Tokenizer PHP Extension
@@ -66,6 +67,7 @@ Download the application source code by using `create-project` in your terminal.
 
 Once this task has finished, run the CLI migration process, this will build the database tables and install everything:
 
+    cd myzedx
     php artisan zedx:install
 
 > If you already have `SQLite3` installed then you can install zedx quickly by adding `--quick`
