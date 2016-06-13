@@ -19,6 +19,8 @@ Next, you should take a few minutes to search the [Support forum](https://discus
 ## Troubleshooting installation
 
 <div class="content-list" markdown="1">
+1. **proc_open function not available**: You may need to enable this function by **editing** your `php.ini` file (on Ubuntu for example this file is located at `/etc/php5/apache2/php.ini`) and then search for `disable_functions=..,proc_open,..` and then **remove proc_open** from the list, **save** your changes and then **restart apache** `sudo service apache2 restart`
+
 1. **An error 500 is displayed when downloading the application files**: You may need to increase or disable the timeout limit on your webserver. For example, Apache's FastCGI sometimes has the `-idle-timeout` option set to 30 seconds.
 
 1. **A blank screen is displayed when opening the application**: Check the permissions are set correctly on the files and folders. For example, running the command `chmod -R 777 *` can fix it.
