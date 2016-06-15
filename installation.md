@@ -72,7 +72,12 @@ Once this task has finished, run the CLI migration process, this will build the 
 
 > If you already have `SQLite3` installed then you can install zedx quickly by adding `--quick`
 
-You can sign in to the administration area via the `/zxadmin` route.
+You need also to make apache the the owner of this directory. on Ubuntu this can be done by the following command :
+
+    cd ..
+    sudo chown -R www-data:www-data ./myzedx
+
+> You can sign in to the administration area via the `/zxadmin` route.
 
 <a name="post-installation-steps"></a>
 ## Post-installation steps
