@@ -6,6 +6,7 @@
 - Using ZEDx
     - [Installation](/docs/{{version}}/installation)
     - [Troubleshooting](/docs/{{version}}/troubleshooting)
+    - [Personalize](/docs/{{version}}/personalize)
 - Building Extensions
     - [Introduction](/docs/{{version}}/extend)
     - [Themes](/docs/{{version}}/themes)
