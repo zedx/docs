@@ -3,6 +3,7 @@
 - [Bug Reports](#bug-reports)
 - [Pull Request Guidelines](#pull-request-guidelines)
 - [Security Vulnerabilities](#security-vulnerabilities)
+- [Install Dev version](#install-dev-version)
 - [Coding Style](#coding-style)
     - [PHPDoc](#phpdoc)
     - [StyleCI](#styleci)
@@ -45,6 +46,47 @@ Once you've posted your report, we'd ask that you please *follow the discussion*
 - [Squash the commits](http://davidwalsh.name/squash-commits-git) if there are too many small ones.
 
 - Follow the [code style](#coding-style).
+
+<a name="install-dev-version"></a>
+## Install Dev version
+
+> **REQUIREMENTS** : You must already have `composer` and `npm` installed on your machine.
+
+For developement purpose, you might want to install to current ZEDx dev version, it's ok, all you have to do is follow these steps :
+
+- Run the CLI `composer create-project zedx/zedx myzedx dev-develop --prefer-dist`
+
+- Edit `composer.json` file
+
+Replace
+
+```
+"require": {
+    "zedx/core": "3.0.0-beta.3"
+}
+```
+
+By
+
+```
+"repositories": [
+    {
+        "type": "git",
+        "url": "https://github.com/zedx/core"
+    }
+],
+"require": {
+    "zedx/core": "dev-develop"
+}
+```
+
+- Update composer by running `composer update`
+
+- Install ZEDx using the CLI by running `php artisan zedx:install` (add `--quick` if you already have `SQLite3` installed on your machine)
+
+- Install npm packages by running `npm install`
+
+- Compile assets by running `gulp` command line.
 
 <a name="security-vulnerabilities"></a>
 ## Security Vulnerabilities
