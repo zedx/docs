@@ -1,5 +1,5 @@
-# ZEDx Documentation
+# Documentation de ZEDx
 
-## Contribution Guidelines
+## Guide du contributeur
 
-If you are submitting documentation for the **current stable release**, submit it to the corresponding language branch. For example, documentation for ZEDx (français) would be submitted to the `fr` branch. Default (English) documentation should be submitted to the `master` branch.
+Si vous contribuez à la documentation de la **version stable actuelle**, contribuez dans la branche de la langue correspondante. Par exemple, la documentation pour ZEDx (Française) devra être proposée dans la branche `fr`. Par défaut la documentation (Anglaise) devra être proposée dans la branche `master`.
