@@ -13,7 +13,7 @@
 
 Si ZEDx ne s'installe pas ou ne fonctionne pas comme prévu, la première chose que vous devez faire est de *vérifier à nouveau* si votre environnement répond au [système recommandé] (https://zedx.io/docs/installation/). S'il vous manque quelque chose dont ZEDx a besoin pour fonctionner (comme l'extension PHP `MCrypt`, par exemple), vous aurez besoin d'y remédier d'abord.
 
-Ensuite, vous devez prendre quelques minutes pour rechercher sur le [forum d'aide] (https://discuss.zedx.io/t/support) et le [traqueur] (https://github.com/zedx/core/issues). Il est possible que quelqu'un a déjà signalé le problème, et qu'un correctif est déja disponible ou le serra prochainement. Si vous avez effectué une recherche approfondie et que vous n'avez rien trouvé concernant votre problème, il est temps de commencer le dépannage.
+Ensuite, vous devez prendre quelques minutes pour rechercher sur le [forum d'aide] (https://discuss.zedx.io/t/support) et le [traqueur d'erreur] (https://github.com/zedx/core/issues). Il est possible que quelqu'un a déjà signalé le problème, et qu'un correctif est déja disponible ou le serra prochainement. Si vous avez effectué une recherche approfondie et que vous n'avez rien trouvé concernant votre problème, il est temps de commencer le dépannage.
 
 <a name="troubleshoot-installation"></a>
 ## Dépannage de l'installation
