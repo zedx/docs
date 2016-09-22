@@ -1,20 +1,20 @@
-# Extending ZEDx
+# Extension de ZEDx
 
 - [Introduction](#introduction)
-- [Widget vs. Module](#widget-vs-module)
+- [Widget ou Module](#widget-vs-module)
 
 <a name="introduction"></a>
 ## Introduction
 
-ZEDx is fast, lightweight, and easy to use. To ensure it stays that way, the [Core Team](https://github.com/zedx/zedx) thinks carefully about adding functionality to the core ZEDx code. Still, users often find the need to graft additional functionality onto ZEDx to meet their needs, that's why we have ensured that they can do what they want and we maked ZEDx highly extensible.
+ZEDx est rapide, léger et facile à utiliser. Afin de garantir qu'il reste ainsi, l'[équipe de développeurs] (https://github.com/zedx/zedx) réfléchit soigneusement à l'ajout de fonctionnalités au noyau du code ZEDx. Pourtant, les utilisateurs trouvent souvent la nécessité de greffer des fonctionnalités supplémentaires sur ZEDx pour répondre à leurs besoins, voilà pourquoi nous avons veillé à ce qu'ils puissent faire ce qu'ils veulent et nous avons créé ZEDx pour qu'il soit extensible aisément.
 
-In order to achieve this extensibility, ZEDx has been built with rich APIs and extension points. With some programming knowledge, you can leverage these APIs to add just about any feature you want. This section of the documentation aims to teach you how ZEDx works, and how to use the APIs so that you can build your own Extensions.
+Afin de réaliser cette extensibilité, ZEDx a été construit avec des APIs riches et des points d'extension. Avec quelques connaissances en programmation, vous pouvez exploiter ces APIs pour ajouter à peu près toute fonction que vous voulez. Cette section de la documentation vise à vous enseigner comment ZEDx fonctionne, et comment utiliser les APIs afin que vous puissiez créer vos propres extensions.
 
 <a name="widget-vs-module"></a>
-## Widget vs. Module
+## Widget ou Module
 
-Well, if you want to create something that doesn't need any database installation, routes, service providers but just a beautiful thing to display to the end user, so you probably want to create a `widget` for example : `Wysiwig`, `similar ads`, `share buttons`
+Eh bien, si vous voulez créer quelque chose qui n'a besoin d'aucune installation de base de données, d'itinéraires, de fournisseurs de services, mais juste quelle chose à afficher pour l'utilisateur final, alors vous voulez probablement créer un `widget` par exemple : `Wysiwig`, `annonces similaires`, `buttons de partage`
 
-A module has the ability to create its own database table, a custom uri etc. for example a `Blog`.
+Un module a la possibilité de créer sa propre table de base de données, un uri personnalisé etc. par exemple un `Blog`.
 
-> You also can create many widgets inside your module.
+> Vous pouvez également créer de nombreux widgets dans votre module.
