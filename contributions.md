@@ -1,38 +1,22 @@
-# Contribution Guide
+# Guide de contribution
 
-- [Bug Reports](#bug-reports)
-- [Pull Request Guidelines](#pull-request-guidelines)
-- [Security Vulnerabilities](#security-vulnerabilities)
-- [Coding Style](#coding-style)
+- [Rapports de bogue](#bug-reports)
+- [Recommandations Pull Request](#pull-request-directives)
+- [Faille de sécurité](#security-vulnerabilities)
+- [Style du code] (#coding-style)
     - [PHPDoc](#phpdoc)
     - [StyleCI](#styleci)
 
-# Guide de contribution
-
-- [Rapports de bogues] (# bug-rapports)
-- [Tirez Demander lignes directrices] (# pull-request-directives)
-- [Vulnérabilités de sécurité] (# sécurité-vulnérabilités)
-- [Codage Style] (# codage de style)
-    - [PHPDoc] (# phpdoc)
-    - [StyleCI] (# styleci)
-
 <a name="bug-reports"></a>
-## Bug Reports Rapports de bogue
+## Rapports de bogue
 
-Thank you for helping us test ZEDx. We're happy to have you on the team! We need people who can *troubleshoot issues patiently* and *communicate them clearly*. As you probably know, good bug reporting takes some time and effort. If you're fine with that, then let's get started!
+Nous vous remercions de nous aider à tester ZEDx. Nous sommes heureux de vous avoir dans l'équipe! Nous avons besoin de gens qui peuvent *résoudre les problèmes patiemment* et *les exprimer clairement*. Comme vous le savez sans doute, un bon rapport de bogue prend un certain temps et nécessite pas mal d'efforts. Si vous êtes à l'aise, alors vous pouvez commencer!
 
-Nous vous remercions de nous aider à tester ZedX. Nous sommes heureux de vous avoir dans l'équipe! Nous avons besoin de gens qui peuvent * résoudre les problèmes patiemment * et * communiquer clairement *. Comme vous le savez sans doute, un bon rapport de bogue prend un certain temps et d'efforts. Si vous êtes bien avec cela, alors nous allons commencer!
-
-Found a bug already? Wonderful! We'd love to hear about it &mdash; but first you should check around to make sure you're not wasting your time on a known issue:
-
-Vous avez trouvé un bug déjà? Formidable! Nous aimerions entendre parler & mdash; mais d'abord vous devez vérifier autour de vous assurer que vous n'êtes pas perdre votre temps sur un problème connu:
+Vous avez déjà trouvé un bogue? Formidable! Nous aimerions en entendre parler &mdash; mais d'abord vous devrez vous assurer que vous n'êtes pas en train de perdre votre temps sur un problème déjà connu:
 
 <div class="content-list" markdown="1">
-- Search our [Support forum](http://discuss.zedx.io/t/bug) to see if it's already been reported.
-- We could be working on a fix, so search our [issue tracker](https://github.com/zedx/core/issues) too.
-
-- Rechercher notre [ forum Support] ( http://discuss.zedx.io/t/bug ) pour voir si elle a déjà été signalé .
-- Nous pourrions travailler sur un correctif , donc chercher notre [ traqueur ] ( https://github.com/zedx/core/issues ) aussi.
+- Rechercher sur le [forum d'aide](http://discuss.zedx.io/t/bug) pour voir si le bogue n'a pas déjà été signalé.
+- Nous pourrions déjà travailler sur un correctif, donc chercher aussi sur notre [traqueur d'erreur](https://github.com/zedx/core/issues).
 </div>
 
 If you've searched *thoroughly* and come up empty-handed, we'll welcome your report. If it's just a simple issue (a misspelled word or graphics glitch, for example) skip to the next paragraph. But if you're seeing errors, or something is clearly broken, we'll need you to gather some information first. Please head over to our [Troubleshooting](http://zedx.io/docs/troubleshooting) guide and follow the instructions there. Collect as much info as you can!
@@ -85,27 +69,19 @@ Une fois que vous avez posté votre rapport , nous aimerions vous demandons s'il
 - Suivre la [style de code] (# codage de style).
 
 <a name="security-vulnerabilities"></a>
-## Security Vulnerabilities
-## Security Vulnerabilities
+## Faille de sécurité
 
-If you discover a security vulnerability within ZEDx, please send an e-mail to <a href="mailto:security@zedx.io">security@zedx.io</a>. All security vulnerabilities will be promptly addressed.
-
-Si vous découvrez une faille de sécurité au sein de ZedX , s'il vous plaît envoyer un e -mail à <a href="mailto:security@zedx.io"> security@zedx.io </a> . Toutes les failles de sécurité seront traitées rapidement.
+Si vous découvrez une faille de sécurité au sein de ZEDx, s'il vous plaît envoyer un e-mail à <a href="mailto:security@zedx.io">security@zedx.io</a>. Toutes les failles de sécurité seront traitées rapidement.
 
 <a name="coding-style"></a>
-## Coding Style
-## Style de codage
+## Style du code
 
-ZEDx follows the [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) coding standard and the [PSR-4](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md) autoloading standard.
-
-ZedX suit le [ PSR- 2 ] ( https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md ) de codage standard et le [ PSR- 4] ( https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md ) standard autoloading .
+ZEDx suit le standard de code [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) et le standard automatique [PSR-4](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md).
 
 <a name="phpdoc"></a>
 ### PHPDoc
 
-Below is an example of a valid ZEDx documentation block. Note that the `@param` attribute is followed by two spaces, the argument type, two more spaces, and finally the variable name:
-
-Voici un exemple d'un bloc de documentation ZedX valide. Notez que l'attribut `@ param` est suivi par deux espaces, le type d'argument, deux autres espaces, et enfin le nom de la variable:
+Voici un exemple valide d'un bloc de documentation ZEDx. Notez que l'attribut `@param` est suivi par deux espaces, le type d'argument, deux autres espaces, et enfin le nom de la variable:
 
     /**
      * Register a binding with the container.
@@ -122,8 +98,5 @@ Voici un exemple d'un bloc de documentation ZedX valide. Notez que l'attribut `@
 
 <a name="styleci"></a>
 ### StyleCI
-### StyleCI
 
-If you're code style isn't perfect, don't worry! [StyleCI](https://styleci.io/) will automatically merge any style fixes into the ZEDx repository after any pull requests are merged. This allows us to focus on the content of the contribution and not the code style.
-
-Si vous êtes style de code est pas parfait, ne vous inquiétez pas ! [ StyleCI ] ( https://styleci.io/ ) fusionnera automatiquement les corrections de style dans le référentiel ZedX après toutes les demandes de traction sont fusionnées. Cela permet de nous concentrer sur le contenu de la contribution et non le style de code .
+Si votre style du code n'est pas parfait, ne vous inquiétez pas! [StyleCI](https://styleci.io/) fusionnera automatiquement les corrections du style dans le dépôt de ZedX lorsque tous les pull requests seront validés. Cela vous permet de vous concentrez sur le contenu de la contribution et non sur le style du code.
