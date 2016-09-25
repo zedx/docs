@@ -63,79 +63,56 @@ L'assistant d'installation est une méthode recommandée pour installer ZedX. Il
 - Navigate to the install.php script in your web browser.
 - Follow the installation instructions.
 
-- Préparer un répertoire sur votre serveur qui est vide . Il peut être un sous-répertoire , le domaine racine ou un sous-domaine .
-- [ Télécharger le fichier d'archive d'installation ] ( https://zedx.io/download ) .
+- Préparer un répertoire sur votre serveur vide. Cela peut être un sous-répertoire, la racine du domaine ou un sous-domaine.
+- [Télécharger le fichier d'archive d'installation](https://zedx.io/download).
 - Décompressez l'archive d'installation dans le répertoire préparé.
-- Autorisations d'écriture de Grant sur ​​le répertoire d'installation et tous ses sous-répertoires et fichiers .
+- Autorisations d'écriture de Grant sur le répertoire d'installation et tous ses sous-répertoires et fichiers .
 - Accédez au script install.php dans votre navigateur Web .
 - Suivez les instructions d'installation.
 </div>
 
 ![image](https://github.com/zedx/docs/blob/master/images/wizard-installer.png?raw=true) {.img-responsive .frame}
 
-> **Note:** A detailed installation log can be found in the `install_files/install.log` file.
-> ** Note: ** Un journal d'installation détaillée peut être trouvée dans le install_files / fichier `install.log`.
+> **Note:** Un journal d'installation détaillé peut être trouvé dans le fichier `install_filesinstall.log`.
 
 <a name="command-line-installation"></a>
-#### Command-line installation
+#### L'installation en ligne de commande
 
-The command-line interface (CLI) method of installation requires [Composer](http://getcomposer.org/) to manage its dependencies.
+La méthode d'interface de ligne de commande (CLI) d'installation nécessite [Composer](http://getcomposer.org/) pour gérer ses dépendances.
 
-Download the application source code by using `create-project` in your terminal. This will install to a directory called **/myzedx**:
+Télécharger le code source de l'application en utilisant `create- project` dans votre terminal. Cela va l'installer dans un répertoire appelé **/myzedx**:
 
-    composer create-project zedx/zedx myzedx dev-master
+    compositeur create-projet zedx/zedx myzedx dev-master
 
-Once this task has finished, run the CLI migration process, this will build the database tables and install everything:
+Une fois cette tâche terminée, lancez le processus de migration CLI, cela va construire les tables de base de données et tout installer:
 
     cd myzedx
     php artisan zedx:install
 
-#### L'installation en ligne de commande
+> Si vous avez déjà installé `SQLite3` alors vous pouvez installer ZedX rapidement en ajoutant `--quick`
 
-La méthode d'interface de ligne de commande (CLI ) d'installation nécessite [Composer] ( http://getcomposer.org/ ) pour gérer ses dépendances .
-
-Télécharger le code source de l'application en utilisant ` create- project` dans votre terminal. Cela va installer dans un répertoire appelé ** / myzedx ** :
-
-    compositeur create- projet ZedX / ZedX myzedx dev -master
-
-Une fois cette tâche terminée, lancez le processus de migration CLI , cela va construire les tables de base de données et tout installer :
-
-
-> If you already have `SQLite3` installed then you can install zedx quickly by adding `--quick`
-> Si vous avez déjà installé ` SQLite3` alors vous pouvez installer ZedX rapidement en ajoutant ` --quick`
-
-You need also to make apache the owner of this directory. on Ubuntu this can be done by the following command :
-Vous devez également vous apache le propriétaire de ce répertoire . sur Ubuntu cela peut être fait par la commande suivante :
+Vous devez également vous apache le propriétaire de ce répertoire . Sur Ubuntu cela peut être fait par la commande suivante :
 
     cd ..
     sudo chown -R www-data:www-data ./myzedx
 
-> You can sign in to the administration area via the `/zxadmin` route.
-> Vous pouvez vous connecter à la zone d'administration via la route `/ zxadmin`.
+> Vous pouvez vous connecter à la zone d'administration via le chemin `/zxadmin`.
 
 <a name="post-installation-steps"></a>
-## Post-installation steps
 
-There are some things you may need to set up after the installation is complete.
-
-## étapes de post-installation
+## Etapes de post-installation
 
 Il y a certaines choses que vous pourriez avoir besoin de mettre en place une fois l'installation terminée.
 
 <a name="Setting-up-the-scheduler"></a>
-### Setting up the scheduler
-### Configuration de l' ordonnanceur
+### Configurer le planificateur de tâches
 
-For *scheduled tasks* to operate correctly, you should add the following Cron entry to your server. Editing the crontab is commonly performed with the command `crontab -e`.
-
-Pour les tâches planifiées * * pour fonctionner correctement, vous devez ajouter l'entrée Cron suivante à votre serveur. Modification de la crontab est généralement effectuée avec la commande `crontab -e`.
+Pour que *les tâches planifiées* fonctionnent correctement, vous devez ajouter l'entrée Cron suivante à votre serveur. La modification de la crontab est généralement effectuée avec la commande `crontab -e`.
 
     * * * * * php /path/to/artisan schedule:run >> /dev/null 2>&1
 
 Be sure to replace `/path/to/artisan` with the absolute path to the *artisan* file in the root directory of ZEDx. This Cron will call the command scheduler every minute. Then ZEDx evaluates any scheduled tasks and runs the tasks that are due.
 
-Veillez à remplacer `/ path / to / artisan` avec le chemin absolu du * artisan fichier * dans le répertoire racine de ZedX . Ce Cron va appeler le planificateur de commandes chaque minute . Puis ZedX évalue toutes les tâches planifiées et exécute les tâches qui lui sont dues .
+Veillez à remplacer `/path/to/artisan` avec le chemin absolu dans le fichier *artisan* du répertoire racine de ZEDx. Ce Cron va appeler le planificateur de commandes chaque minute. Puis ZEDx évalue toutes les tâches planifiées et exécute les tâches nécessaires.
 
-**Example**: If your zedx website is located at `/var/www/myzedx/` so your `/path/to/artisan` will be `/var/www/myzedx/artisan`
-
-** Exemple ** : Si votre site ZedX est situé à `/ var / www / myzedx /` que votre `/ path / to / artisan` sera ` / var / www / myzedx / artisan`
+**Exemple** : Si votre site zedx est situé à l'adresse `/var/www/myzedx/` alors `/path/to/artisan` sera `/var/www/myzedx/artisan`
