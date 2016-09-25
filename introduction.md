@@ -10,7 +10,7 @@ ZEDx est développé librement sur [GitHub](https://github.com/zedx/zedx).
 
 - **Simple et rapide** No clutter, no bloat, pas de dépendances complexes. ZedX est construit en utilisant [Le Framework PHP de Laravel](https://laravel.com)</a>.
 
-- **Puissant et extensible.** Personnaliser, étendre et intégrer ZEDx comme vous le désirez. L'architecture de ZEDx est étonnamment souple parce que le front est basée sur des widgets.
+- **Puissant et extensible.** Personnaliser, étendre et intégrer ZEDx comme vous le désirez. L'architecture de ZEDx est étonnamment souple parce que le front est basé sur des widgets.
 
 - ** Gratuit et ouvert.** ZEDx est publié sous la [licence MIT](https://github.com/zedx/zedx/blob/master/LICENSE).
 </div>
@@ -19,8 +19,7 @@ ZEDx est développé librement sur [GitHub](https://github.com/zedx/zedx).
 
 > **ZEDx est actuellement en version bêta et ne doit pas être utilisé en production.** Il est développé librement sur GitHub.
 
-To give ZEDx a spin, go to the [Installation](https://zedx.io/docs/installation) page.
-Pour jeter un œil à ZEDx , aller à la page [Installation](https://zedx.io/docs/installation).
+Pour essayer ZEDx , aller à la page [Installation](https://zedx.io/docs/installation).
 
 ## Equipe de développeur
 
