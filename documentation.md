@@ -3,10 +3,10 @@
     - [Guide de contribution](/docs/{{version}}/contributions)
     - [FAQ](/docs/{{version}}/faq)
     - [Documentation de l'API](/api/{{version}})
-- Utilisation ZEDx
-    - [Installation](/docs/{{version}}/installation)
+- Utiliser ZEDx
+    - [Installer](/docs/{{version}}/installation)
     - [Dépannage](/docs/{{version}}/troubleshooting)
-    - [Personalisation](/docs/{{version}}/personalize)
+    - [Personaliser](/docs/{{version}}/personalize)
 - Créer des extensions
     - [Introduction](/docs/{{version}}/extend)
     - [Thèmes](/docs/{{version}}/themes)
