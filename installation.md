@@ -63,7 +63,7 @@ La méthode d'installation en ligne de commande (CLI) nécessite [Composer](http
 
 Télécharger le code source de l'application en utilisant `create- project` dans votre terminal. Cela va l'installer dans un répertoire appelé **/myzedx**:
 
-    compositeur create-projet zedx/zedx myzedx dev-master
+    composer create-projet zedx/zedx myzedx dev-master
 
 Une fois cette tâche terminée, lancez le processus de migration CLI, cela va construire les tables de base de données et tout installer:
 
