@@ -61,7 +61,7 @@ L'assistant d'installation est la méthode recommandée pour installer ZEDx. Il 
 
 La méthode d'installation en ligne de commande (CLI) nécessite [Composer](http://getcomposer.org/) pour gérer ses dépendances.
 
-Télécharger le code source de l'application en utilisant `create- project` dans votre terminal. Cela va l'installer dans un répertoire appelé **/myzedx**:
+Télécharger le code source de l'application en utilisant `create-project` dans votre terminal. Cela va l'installer dans un répertoire appelé **/myzedx**:
 
     composer create-projet zedx/zedx myzedx dev-master
 
