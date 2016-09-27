@@ -8,7 +8,7 @@ ZEDx est développé librement sur [GitHub](https://github.com/zedx/zedx).
 
 <div class="content-list" markdown="1">
 
-- **Simple et rapide** No clutter, no bloat, pas de dépendances complexes. ZEDx est construit en utilisant [Le Framework PHP de Laravel](https://laravel.com)</a>.
+- **Simple et rapide** Pas de prise de tête, pas de dépendances complexes. ZEDx est construit en utilisant [Le Framework PHP de Laravel](https://laravel.com)</a>.
 
 - **Puissant et extensible.** Personnaliser, étendre et intégrer ZEDx comme vous le désirez. L'architecture de ZEDx est étonnamment souple parce que le front est basé sur des widgets.
 
