@@ -1,65 +1,65 @@
-# Contribution Guide
+# Guide de contribution
 
-- [Bug Reports](#bug-reports)
-- [Pull Request Guidelines](#pull-request-guidelines)
-- [Security Vulnerabilities](#security-vulnerabilities)
-- [Coding Style](#coding-style)
+- [Rapports de bogue](#bug-reports)
+- [Recommandations Pull Request](#pull-request-guidelines)
+- [Faille de sécurité](#security-vulnerabilities)
+- [Style du code] (#coding-style)
     - [PHPDoc](#phpdoc)
     - [StyleCI](#styleci)
 
 <a name="bug-reports"></a>
-## Bug Reports
+## Rapports de bogue
 
-Thank you for helping us test ZEDx. We're happy to have you on the team! We need people who can *troubleshoot issues patiently* and *communicate them clearly*. As you probably know, good bug reporting takes some time and effort. If you're fine with that, then let's get started!
+Nous vous remercions de nous aider à tester ZEDx. Nous sommes heureux de vous avoir dans l'équipe! Nous avons besoin de gens qui peuvent *résoudre les problèmes patiemment* et *les exprimer clairement*. Comme vous le savez sans doute, un bon rapport de bogue prend un certain temps et nécessite pas mal d'efforts. Si vous êtes à l'aise, alors vous pouvez commencer!
 
-Found a bug already? Wonderful! We'd love to hear about it &mdash; but first you should check around to make sure you're not wasting your time on a known issue:
-
-<div class="content-list" markdown="1">
-- Search our [Support forum](http://discuss.zedx.io/t/bug) to see if it's already been reported.
-- We could be working on a fix, so search our [issue tracker](https://github.com/zedx/core/issues) too.
-</div>
-
-If you've searched *thoroughly* and come up empty-handed, we'll welcome your report. If it's just a simple issue (a misspelled word or graphics glitch, for example) skip to the next paragraph. But if you're seeing errors, or something is clearly broken, we'll need you to gather some information first. Please head over to our [Troubleshooting](http://zedx.io/docs/troubleshooting) guide and follow the instructions there. Collect as much info as you can!
-
-Okay, time to get writing. Head back to the [Support forum](http://discuss.zedx.io/t/bug) and start a new discussion. Be sure to give it a title that's clear and concise, and then explain the problem thoroughly. Don't forget to mention:
+Vous avez déjà trouvé un bogue? Formidable! Nous aimerions en entendre parler &mdash; mais d'abord vous devrez vous assurer que vous n'êtes pas en train de perdre votre temps sur un problème déjà connu:
 
 <div class="content-list" markdown="1">
-- What you were doing when the problem occurred
-- All the information you gathered while troubleshooting
-- Anything you can tell us about your sever environment
+- Rechercher sur le [forum d'aide](http://discuss.zedx.io/t/bug) pour voir si le bogue n'a pas déjà été signalé.
+- Nous pourrions déjà travailler sur un correctif, donc chercher aussi sur notre [traqueur d'erreur](https://github.com/zedx/core/issues).
 </div>
 
-Remember: the goal of a bug report is to make it easy for us to replicate the bug and fix it. You might want to read [this article](http://www.chiark.greenend.org.uk/~sgtatham/bugs.html) for some useful tips on how to write an effective bug report. And please take a moment or two to format your post so it's easy to tell what's what.
+Si vous avez effectué une recherche *approfondie* et n'avez rien trouvé, votre rapport est le bienvenu. Si c'est juste une petite erreur (un mot mal orthographié ou une anomalie graphique, par exemple) passer au paragraphe suivant. Par contre, si vous voyez des erreurs, ou quelque chose qui est clairement cassé nous aurons besoin d'abord d'informations. S'il vous plaît, rendez-vous sur notre guide [Dépannage](http://zedx.io/docs/troubleshooting) et suivez ses instructions. Recueillez autant d'informations que vous pouvez!
 
-Once you've posted your report, we'd ask that you please *follow the discussion* that you created and wait patiently. We may need to ask for further details or clarification; but we've always got plenty to do, and it could be a while before we can give your report the time it deserves.
+Parfait, il est temps de passer à l'écriture. Retournez sur le [forum de soutien](http://discuss.zedx.io/t/bug) et commencez une nouvelle discussion. Assurez-vous de lui donner un titre clair et concis, ensuite expliquez en détail le problème. Ne pas oublier de mentionner:
+
+<div class="content-list" markdown="1">
+- Qu'est-ce que vous faisiez lorsque le problème est survenu
+- Toutes les informations recueillies pendant le dépannage
+- Tout ce que vous pouvez nous dire de votre environnement serveur
+</div>
+
+Rappelez-vous: l'objectif d'un rapport de bogue est que nous puissions reproduire le bogue et le corriger. Vous pouvez lire [cet article](http://www.chiark.greenend.org.uk/~sgtatham/bugs.html) qui énumère quelques conseils utiles sur la façon d'écrire un rapport de bogue efficace. Et s'il vous plaît , prenez votre temps pour rédiger votre message de sorte qu'il soit facile de comprendre de quoi il s'agit.
+
+Une fois que vous avez posté votre rapport, nous vous demandons s'il vous plaît de *suivre la discussion* que vous avez créée et t'attendre patiemment. Nous pouvons avoir besoin de vous demander des précisions ou des éclaircissements; mais nous avons toujours beaucoup à faire, et il peut se passer un certain temps avant que nous puissions consacrer le temps nécessaire à votre rapport.
 
 <a name="pull-request-guidelines"></a>
-## Pull Request Guidelines
+## Recommandations Pull Request
 
-- Read the [Contributor License Agreement](#contributor-license-agreement).
+- Lisez le [Guide de contribution](#contributeur licence-accord).
 
-- We are using [Long-Running Branches Workflow](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows#Long-Running-Branches)
+- Nous utilisons [Long-Running Branches Workflow](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows#Long-Running-Branches)
 
-- Checkout a topic branch from `develop` and merge back against `develop`.
+- Sélectionnez un sujet de la branche `develop` et fusionner en arrière contre `develop`.
 
-- [Squash the commits](http://davidwalsh.name/squash-commits-git) if there are too many small ones.
+- [Regroupez les commits](http://davidwalsh.name/squash-commits-git) s'ils sont trop petits.
 
-- Follow the [code style](#coding-style).
+- Respectez le [style du code](#coding-style).
 
 <a name="security-vulnerabilities"></a>
-## Security Vulnerabilities
+## Faille de sécurité
 
-If you discover a security vulnerability within ZEDx, please send an e-mail to <a href="mailto:security@zedx.io">security@zedx.io</a>. All security vulnerabilities will be promptly addressed.
+Si vous découvrez une faille de sécurité au sein de ZEDx, s'il vous plaît envoyer un e-mail à <a href="mailto:security@zedx.io">security@zedx.io</a>. Toutes les failles de sécurité seront traitées rapidement.
 
 <a name="coding-style"></a>
-## Coding Style
+## Style du code
 
-ZEDx follows the [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) coding standard and the [PSR-4](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md) autoloading standard.
+ZEDx suit le standard de code [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) et le standard automatique [PSR-4](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md).
 
 <a name="phpdoc"></a>
 ### PHPDoc
 
-Below is an example of a valid ZEDx documentation block. Note that the `@param` attribute is followed by two spaces, the argument type, two more spaces, and finally the variable name:
+Voici un exemple valide d'un bloc de documentation ZEDx. Notez que l'attribut `@param` est suivi par deux espaces, le type d'argument, deux autres espaces, et enfin le nom de la variable:
 
     /**
      * Register a binding with the container.
@@ -77,4 +77,4 @@ Below is an example of a valid ZEDx documentation block. Note that the `@param` 
 <a name="styleci"></a>
 ### StyleCI
 
-If you're code style isn't perfect, don't worry! [StyleCI](https://styleci.io/) will automatically merge any style fixes into the ZEDx repository after any pull requests are merged. This allows us to focus on the content of the contribution and not the code style.
+Si votre style du code n'est pas parfait, ne vous inquiétez pas! [StyleCI](https://styleci.io/) fusionnera automatiquement les corrections du style dans le dépôt de ZedX lorsque tous les pull requests seront validés. Cela vous permet de vous concentrez sur le contenu de la contribution et non sur le style du code.

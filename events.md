@@ -1,26 +1,26 @@
-# Events
+# Evénements
 
 - [Introduction](#introduction)
-- [Available Events](#available-events)
+- [Evénements disponibles](#available-events)
 
 <a name="introduction"></a>
 ## Introduction
 
-ZEDx includes a variety of events.
+ZEDx comprend une variété d'événements.
 
-Whenever something of importance is about to happen, is happening, or has just happened, ZEDx fires an `Event`. As an Extension developer, your job is pretty simple: `listen` for the events you're interested in, and react accordingly.
+Chaque fois que quelque chose d'important est sur le point de se produire, qui se passe, ou qui vient d'arriver, ZEDx déclenche un `Evénement`. En tant que développeur d'extension, votre travail est assez simple: `Ecouter` les événements qui vous intéressent, et réagir en conséquence.
 
-For example:
+Par exemple :
 
 <div class="content-list" markdown="1">
-- When an `Ad` is validated by an Administrator, ZEDx fires the `AdWasValidated` event. A "Twitter Feed" Extension could listen for this event and react by sending a tweet with the ad's title and URL.
-- When an `Ad` is about to be created by a user, ZEDx fires the `AdWillBeCreated` event. A "NoSpam" Extension could listen for this event and react by checking the Ad content.
+- Quand une `Annonce` est validée par un administrateur, ZEDx déclenche l'événement `AdWasValidated`. Une extension "Twitter Feed" pourrait écouter cet événement et réagir en envoyant un tweet avec le titre et l'URL de l'annonce.
+- Lorsqu'une `Annonce` est sur le point d'être créée par un utilisateur, ZEDx déclenche l'événement `AdWillBeCreated`. Une extension "NoSpam" pourrait écouter cet événement et réagir en vérifiant le contenu de l'annonce.
 </div>
 
-Get the idea? Great!
+Vous avez une idée? Super!
 
 <a name="available-events"></a>
-## Available Events
+## Evénements disponibles
 
 <style>
     .collection-method-list > p {
@@ -33,7 +33,7 @@ Get the idea? Great!
     }
 </style>
 
-### Ad
+### Annonce
 
 <div class="collection-method-list" markdown="1">
 [AdRenewRequested](#AdRenewRequested)
@@ -52,7 +52,7 @@ Get the idea? Great!
 [AdWillBeUpdated](#AdWillBeUpdated)
 </div>
 
-### Admin
+### Administration
 
 <div class="collection-method-list" markdown="1">
 [AdminWasLoggedIn](#AdminWasLoggedIn)
@@ -61,7 +61,7 @@ Get the idea? Great!
 [AdminWillBeUpdated](#AdminWillBeUpdated)
 </div>
 
-### Adtype
+### Type d'annonce
 
 <div class="collection-method-list" markdown="1">
 [AdtypeWasCreated](#AdtypeWasCreated)
@@ -90,7 +90,7 @@ Get the idea? Great!
 [CacheUserWasUpdated](#CacheUserWasUpdated)
 </div>
 
-### Category
+### Catégorie
 
 <div class="collection-method-list" markdown="1">
 [CategoryWasCreated](#CategoryWasCreated)
@@ -99,7 +99,7 @@ Get the idea? Great!
 [CategoryWasUpdated](#CategoryWasUpdated)
 </div>
 
-### Field
+### Champ
 
 <div class="collection-method-list" markdown="1">
 [FieldWasCreated](#FieldWasCreated)
@@ -142,27 +142,27 @@ Get the idea? Great!
 [PageWillBeUpdated](#PageWillBeUpdated)
 </div>
 
-### Payment
+### Paiement
 
 <div class="collection-method-list" markdown="1">
 [PaymentWasReceived](#PaymentWasReceived)
 </div>
 
-### Search Engine
+### Moteur de recherche
 
 <div class="collection-method-list" markdown="1">
 [SearchEngineRequested](#SearchEngineRequested)
 [SearchEngineWillRender](#SearchEngineWillRender)
 </div>
 
-### Setting
+### Réglage
 
 <div class="collection-method-list" markdown="1">
 [SettingWasUpdated](#SettingWasUpdated)
 [SettingWillBeUpdated](#SettingWillBeUpdated)
 </div>
 
-### Subscription
+### Abonnement
 
 <div class="collection-method-list" markdown="1">
 [SubscriptionWasCreated](#SubscriptionWasCreated)
@@ -184,7 +184,7 @@ Get the idea? Great!
 [TemplateWillBeUpdated](#TemplateWillBeUpdated)
 </div>
 
-### User
+### Utilisateur
 
 <div class="collection-method-list" markdown="1">
 [UserWasCreated](#UserWasCreated)

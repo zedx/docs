@@ -1,72 +1,72 @@
-# Troubleshooting
+# Dépannage
 
 - [Introduction](#introduction)
-- [Troubleshooting installation](#troubleshoot-installation)
-- [Troubleshooting ZEDx](#troubleshoot-zedx)
-    - [Step 1: Turn on debug mode](#step-1-turn-on-debug-mode)
-    - [Step 2: Reproduce the issue.](#step-2-reproduce-the-issue)
-    - [Step 3: Collect information.](#step-3-collect-information)
-    - [Step 4: Prepare a report.](#step-4-prepare-a-report)
+- [Dépannage de l'installation](#troubleshoot-installation)
+- [Dépannage de ZEDx](#troubleshoot-zedx)
+    - [Etape 1: Activer le mode de débogage](#step-1-turn-on-debug-mode)
+    - [Etape 2: Reproduire l'erreur.](#step-2-reproduce-the-issue)
+    - [Etape 3: Récolter l'information.](#step-3-collect-information)
+    - [Etape 4: Préparer un rapport.](#step-4-prepare-a-report)
 
 <a name="introduction"></a>
 ## Introduction
 
-If ZEDx isn't installing or working as expected, the first thing you should do is *check again* whether your environment meets the [system requirements](https://zedx.io/docs/installation/). If you're missing something that ZEDx needs to run (such as the PHP `MCrypt` extension, for example) you'll need to remedy that first.
+Si ZEDx ne s'installe pas ou ne fonctionne pas comme prévu, la première chose que vous devrez faire est de *vérifier à nouveau* si votre environnement répond au [système recommandé](https://zedx.io/docs/installation/). S'il vous manque quelque chose dont ZEDx a besoin pour fonctionner (comme l'extension PHP `MCrypt`, par exemple), vous aurez besoin d'y remédier d'abord.
 
-Next, you should take a few minutes to search the [Support forum](https://discuss.zedx.io/t/support) and the [issue tracker](https://github.com/zedx/core/issues). It's possible that someone has already reported the problem, and a fix is either available or on the way. If you've searched thoroughly and can't find any information about the problem, it's time to start troubleshooting.
+Ensuite, vous devez prendre quelques minutes pour rechercher sur le [forum d'aide](https://discuss.zedx.io/t/support) et le [traqueur d'erreur](https://github.com/zedx/core/issues). Il est possible que quelqu'un ait déjà signalé le problème, et qu'un correctif est déjà disponible ou le sera prochainement. Si vous avez effectué une recherche approfondie et que vous n'avez rien trouvé concernant votre problème, il est temps de commencer le dépannage.
 
 <a name="troubleshoot-installation"></a>
-## Troubleshooting installation
+## Dépannage de l'installation
 
 <div class="content-list" markdown="1">
-1. **proc_open function not available**: You may need to enable this function by **editing** your `php.ini` file (on Ubuntu for example this file is located at `/etc/php5/apache2/php.ini`) and then search for `disable_functions=..,proc_open,..` and then **remove proc_open** from the list, **save** your changes and then **restart apache** `sudo service apache2 restart`
+1. **proc_open function not available** : Vous devrez peut-être activer cette fonction **éditer** votre fichier `php.ini` (sur Ubuntu par exemple ce fichier se trouve dans `/etc/php5/apache2/php.ini`) puis recherchez `disable_functions=..,proc_open,..` puis **remove proc_open** de la liste , **enregistrer** vos modifications puis **redémarrer apache** `sudo service apache2 restart`
 
-1. **An error 500 is displayed when downloading the application files**: You may need to increase or disable the timeout limit on your webserver. For example, Apache's FastCGI sometimes has the `-idle-timeout` option set to 30 seconds.
+1. **An error 500 is displayed when downloading the application files** : Vous devrez peut-être augmenter ou désactiver la limite de délai d'attente sur votre serveur. Par exemple, le FastCGI d'Apache a parfois l'option `-idle - timeout` à 30 secondes.
 
-1. **A blank screen is displayed when opening the application**: Check the permissions are set correctly on the files and folders. For example, running the command `chmod -R 777 *` can fix it.
+1. **Un écran blanc apparaît lors de l'ouverture de l'application** : Vérifiez que les autorisations sont définies correctement sur les fichiers et dossiers. Par exemple, en exécutant la commande `chmod -R 777 *` peut régler l'erreur.
 
-1. **An error code "liveConnection" is displayed**: The installer will test a connection to the installation server using port 80 and 443. Check that your webserver can create outgoing connections on port 80 and 443 via PHP. Contact your hosting provider or this is often found in the server firewall settings.
+1. **Un code d'erreur "liveConnection" est affiché** : Le programme d'installation va tester une connexion au serveur d'installation en utilisant le port 80 et 443. Vérifiez que votre serveur peut créer des connexions sortantes sur le port 80 et 443 via PHP. Contactez votre fournisseur d'hébergement pour qu'il vérifie les paramètres de pare-feu du serveur.
 
-1. **MySQL shows an error "Syntax error or access violation: 1067 Invalid default value for ..."**: Check your MySQL settings file to make sure the `NO_ZERO_DATE` setting is disabled.
+1. **MySQL montre une erreur "Erreur de syntaxe ou violation d'accès: 1067 valeur par défaut non valide pour ..."**: Vérifiez votre fichier de paramètres MySQL pour vous assurer que le paramètre `NO_ZERO_DATE` est désactivé.
 
-> **Note:** A detailed installation log can be found in the `install_files/install.log` file.
+> **Note:** Un journal d'installation détaillé peut être trouvé dans le fichier `install_files/install.log`.
 </div>
 
 <a name="troubleshoot-zedx"></a>
-## Troubleshooting ZEDx
+## Dépannage de ZEDx
 
 <a name="step-1-turn-on-debug-mode"></a>
-### Step 1: Turn on debug mode.
+### Etape 1: Activer le mode de débogage.
 
-Before you proceed, you should enable ZEDx's debugging tools. Simply open up **.env** with a text editor, change the `APP_DEBUG=false` value to `APP_DEBUG=true`, and save the file. This will cause ZEDx to display detailed error messages, giving you an insight into what's going wrong.
+Avant de poursuivre, vous devez activer les outils de débogage de ZEDx. Il suffit d'ouvrir **.env** avec un éditeur de texte, changer la valeur `APP_DEBUG=false` à `APP_DEBUG=true`, et enregistrez le fichier. Cela permettra à ZEDx d'afficher des messages d'erreurs détaillés, vous donnant un aperçu de ce qui va mal.
 
-*Be sure to revert these changes once the error is fixed!*
+*Assurez-vous de remettre la valeur à false une fois que l'erreur est réglée!*
 
 <a name="step-2-reproduce-the-issue"></a>
-### Step 2: Reproduce the issue.
+### Etape 2: Reproduire l'erreur.
 
-Try to make the problem happen again. Pay careful attention to what you're doing when it occurs. Does it happen every time, or only now and then? Try changing a setting that you think might affect the problem, or the order in which you're doing things. Does it happen under some conditions, but not others?
+Essayez de reproduire le problème. Faites très attention à ce que vous faites quand il se produit. Est-ce qu'il arrive à chaque fois, ou seulement maintenant et ensuite? Essayez de changer un paramètre qui peut avoir une incidence sur le problème, ou l'ordre dans lequel vous faites les choses. Est-ce qu'il arrive dans certaines conditions, mais pas dans d'autres?
 
-If you've recently added or updated an extension, you should disable it temporarily to see if that makes the problem go away. Make sure all of your extensions were meant to be used with the version of ZEDx you're running. Outdated extensions can cause a variety of issues.
+Si vous avez récemment ajouté ou mis à jour une extension, vous devez la désactiver temporairement pour voir si cela fait disparaître le problème. Assurez-vous que toutes vos extensions étaient destinées à être utilisées avec la version de ZEDx que vous utilisez. Des extensions obsolètes peuvent causer une variété de problèmes.
 
-Somewhere along the way you may get an idea about what's causing your issue, and figure out a way to fix it. But even if that doesn't happen, you will probably run across a few valuable clues that will help us figure out what's going on, once you've filed your bug report.
+Vous pouvez avoir une idée sur ce qui cause votre problème et avez trouvé un moyen de le réparer. Mais même si cela ne se produit pas, vous avez probablement apporté quelques indices précieux qui nous aideront à comprendre ce qui se passe, une fois que vous aurez déposé votre rapport de bogue.
 
 <a name="step-3-collect-information"></a>
-### Step 3: Collect information.
+### Etape 3: Récolter l'information.
 
-If it looks like you're going to need help solving the problem, it's time to get serious about collecting data. Look for error messages or other information about the problem in the following places:
+S'il semble que vous allez avoir besoin d'aide pour résoudre le problème, il est temps de prendre au sérieux la collecte de données. Recherchez les messages d'erreurs ou d'autres informations sur le problème dans les endroits suivants:
 
 <div class="content-list" markdown="1">
-- Displayed on the actual page
-- Displayed in the browser console
-- Recorded in the server's error log
+- Affiché sur la page actuelle
+- Affiché dans la console du navigateur
+- Enregistré dans le journal d'erreurs du serveur
 </div>
 
-Copy any messages to a text file and jot down a few notes about *when* the error occurred, *what* you were doing at the time, and so on. Be sure to include any insights you may have gleaned about the conditions under which the issue does and doesn't occur. Add as much information as possible about your server environment: OS version, web server version, PHP version and handler, et cetera.
+Copiez tous les messages dans un fichier texte et ajoutez quelques notes sur *quand* l'erreur est survenue, *ce que* vous faisiez, et ainsi de suite. Assurez-vous d'inclure toutes les idées que vous avez peut-être glanées sur les conditions dans lesquelles le problème se produit et ne se produit pas. Ajoutez autant d'informations que possible sur votre environnement de serveur: la version du système d'exploitation, la version du serveur web, la version PHP et gestionnaire, et cetera.
 
 <a name="step-4-prepare-a-report"></a>
-## Step 4: Prepare a report.
+## Etape 4: Préparer votre rapport.
 
-Once you have gathered all the information you can about the problem, you're ready to file a bug report. Please post it as a new discussion in the [Support forum](https://discuss.zedx.io/t/support); you'll find more information about how to report bugs on the [Contributing](https://zedx.io/docs/contributions) page. We also recommend that you read through [this article](http://www.chiark.greenend.org.uk/~sgtatham/bugs.html) for some useful pointers on how to write an effective bug report.
+Une fois que vous avez recueilli toutes les informations que vous pouvez sur le problème, vous êtes prêt à déposer un rapport de bogue. S'il vous plaît postez une nouvelle discussion dans le [forum d'aide](https://discuss.zedx.io/t/support); vous trouverez plus d'informations sur la façon de signaler les bogues sur la page [Contribution](https://zedx.io/docs/contributions). Nous vous recommandons également de lire [cet article](http://www.chiark.greenend.org.uk/~sgtatham/bugs.html) qui contient de nombreux conseils utiles sur la façon d'écrire un rapport de bogue efficace.
 
-If you discover something new about the issue after filing your report, please add that information at the bottom of your original post. It's a good idea to file a report even if you have solved the problem on your own, since other users may also benefit from your solution. If you've found a temporary workaround for the problem, be sure to mention that as well.
+Si vous découvrez quelque chose de nouveau concernant le problème après le dépôt de votre rapport, s'il vous plaît ajoutez cette information au bas de votre message original. C'est une bonne idée de déposer un rapport, même si vous avez résolu le problème, afin que d'autres utilisateurs puissent également bénéficier de votre solution. Si vous avez trouvé une solution temporaire au problème, mentionnez-la aussi.

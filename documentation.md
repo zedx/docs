@@ -1,18 +1,18 @@
 - Prologue
     - [Introduction](/docs/{{version}}/introduction)
-    - [Contribution Guide](/docs/{{version}}/contributions)
+    - [Guide de contribution](/docs/{{version}}/contributions)
     - [FAQ](/docs/{{version}}/faq)
-    - [API Documentation](/api/{{version}})
-- Using ZEDx
-    - [Installation](/docs/{{version}}/installation)
-    - [Troubleshooting](/docs/{{version}}/troubleshooting)
-    - [Personalize](/docs/{{version}}/personalize)
-- Building Extensions
+    - [Documentation de l'API](/api/{{version}})
+- Utiliser ZEDx
+    - [Installer](/docs/{{version}}/installation)
+    - [Dépannage](/docs/{{version}}/troubleshooting)
+    - [Personaliser](/docs/{{version}}/personalize)
+- Créer des extensions
     - [Introduction](/docs/{{version}}/extend)
-    - [Themes](/docs/{{version}}/themes)
+    - [Thèmes](/docs/{{version}}/themes)
     - [Widgets](/docs/{{version}}/widgets)
     - [Modules](/docs/{{version}}/modules)
-- Translating ZEDx
-    - [Quick Start](/docs/{{version}}/translating)
+- Traduire ZEDx
+    - [Démarrage rapide](/docs/{{version}}/translating)
 - Services
-    - [Events](/docs/{{version}}/events)
+    - [Evénements](/docs/{{version}}/events)
