@@ -3,7 +3,7 @@
 - [Rapports de bogue](#bug-reports)
 - [Recommandations Pull Request](#pull-request-guidelines)
 - [Faille de sécurité](#security-vulnerabilities)
-- [Style du code] (#coding-style)
+- [Style du code](#coding-style)
     - [PHPDoc](#phpdoc)
     - [StyleCI](#styleci)
 
