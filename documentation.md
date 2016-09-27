@@ -2,7 +2,7 @@
     - [Introduction](/docs/{{version}}/introduction)
     - [Guide de contribution](/docs/{{version}}/contributions)
     - [FAQ](/docs/{{version}}/faq)
-    - [Documentation de l'API](/api/{{version}})
+    - [Documentation de l'API](/api/master)
 - Utiliser ZEDx
     - [Installer](/docs/{{version}}/installation)
     - [Dépannage](/docs/{{version}}/troubleshooting)
