@@ -11,7 +11,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-Si ZEDx ne s'installe pas ou ne fonctionne pas comme prévu, la première chose que vous devrez faire est de *vérifier à nouveau* si votre environnement répond au [système recommandé](https://zedx.io/docs/installation/). S'il vous manque quelque chose dont ZEDx a besoin pour fonctionner (comme l'extension PHP `MCrypt`, par exemple), vous aurez besoin d'y remédier d'abord.
+Si ZEDx ne s'installe pas ou ne fonctionne pas comme prévu, la première chose que vous devrez faire est de *vérifier à nouveau* si votre environnement répond au [système recommandé](https://zedx.io/docs/fr/installation/). S'il vous manque quelque chose dont ZEDx a besoin pour fonctionner (comme l'extension PHP `MCrypt`, par exemple), vous aurez besoin d'y remédier d'abord.
 
 Ensuite, vous devez prendre quelques minutes pour rechercher sur le [forum d'aide](https://discuss.zedx.io/t/support) et le [traqueur d'erreur](https://github.com/zedx/core/issues). Il est possible que quelqu'un ait déjà signalé le problème, et qu'un correctif est déjà disponible ou le sera prochainement. Si vous avez effectué une recherche approfondie et que vous n'avez rien trouvé concernant votre problème, il est temps de commencer le dépannage.
 
@@ -27,7 +27,7 @@ Ensuite, vous devez prendre quelques minutes pour rechercher sur le [forum d'aid
 
 1. **Un code d'erreur "liveConnection" est affiché** : Le programme d'installation va tester une connexion au serveur d'installation en utilisant le port 80 et 443. Vérifiez que votre serveur peut créer des connexions sortantes sur le port 80 et 443 via PHP. Contactez votre fournisseur d'hébergement pour qu'il vérifie les paramètres de pare-feu du serveur.
 
-1. **MySQL montre une erreur "Erreur de syntaxe ou violation d'accès: 1067 valeur par défaut non valide pour ..."**: Vérifiez votre fichier de paramètres MySQL pour vous assurer que le paramètre `NO_ZERO_DATE` est désactivé.
+1. **MySQL montre une erreur "Erreur de syntaxe ou violation d'accès: 1067 valeur par défaut non valide pour ..."** : Vérifiez votre fichier de paramètres MySQL pour vous assurer que le paramètre `NO_ZERO_DATE` est désactivé.
 
 > **Note:** Un journal d'installation détaillé peut être trouvé dans le fichier `install_files/install.log`.
 </div>
@@ -67,6 +67,6 @@ Copiez tous les messages dans un fichier texte et ajoutez quelques notes sur *qu
 <a name="step-4-prepare-a-report"></a>
 ## Etape 4: Préparer votre rapport.
 
-Une fois que vous avez recueilli toutes les informations que vous pouvez sur le problème, vous êtes prêt à déposer un rapport de bogue. S'il vous plaît postez une nouvelle discussion dans le [forum d'aide](https://discuss.zedx.io/t/support); vous trouverez plus d'informations sur la façon de signaler les bogues sur la page [Contribution](https://zedx.io/docs/contributions). Nous vous recommandons également de lire [cet article](http://www.chiark.greenend.org.uk/~sgtatham/bugs.html) qui contient de nombreux conseils utiles sur la façon d'écrire un rapport de bogue efficace.
+Une fois que vous avez recueilli toutes les informations que vous pouvez sur le problème, vous êtes prêt à déposer un rapport de bogue. S'il vous plaît postez une nouvelle discussion dans le [forum d'aide](https://discuss.zedx.io/t/support); vous trouverez plus d'informations sur la façon de signaler les bogues sur la page [Contribution](https://zedx.io/docs/fr/contributions). Nous vous recommandons également de lire [cet article](http://www.chiark.greenend.org.uk/~sgtatham/bugs.html) qui contient de nombreux conseils utiles sur la façon d'écrire un rapport de bogue efficace.
 
 Si vous découvrez quelque chose de nouveau concernant le problème après le dépôt de votre rapport, s'il vous plaît ajoutez cette information au bas de votre message original. C'est une bonne idée de déposer un rapport, même si vous avez résolu le problème, afin que d'autres utilisateurs puissent également bénéficier de votre solution. Si vous avez trouvé une solution temporaire au problème, mentionnez-la aussi.
