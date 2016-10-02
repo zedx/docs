@@ -19,7 +19,7 @@ Vous avez déjà trouvé un bogue? Formidable! Nous aimerions en entendre parler
 - Nous pourrions déjà travailler sur un correctif, donc chercher aussi sur notre [traqueur d'erreur](https://github.com/zedx/core/issues).
 </div>
 
-Si vous avez effectué une recherche *approfondie* et n'avez rien trouvé, votre rapport est le bienvenu. Si c'est juste une petite erreur (un mot mal orthographié ou une anomalie graphique, par exemple) passer au paragraphe suivant. Par contre, si vous voyez des erreurs, ou quelque chose qui est clairement cassé nous aurons besoin d'abord d'informations. S'il vous plaît, rendez-vous sur notre guide [Dépannage](http://zedx.io/docs/troubleshooting) et suivez ses instructions. Recueillez autant d'informations que vous pouvez!
+Si vous avez effectué une recherche *approfondie* et n'avez rien trouvé, votre rapport est le bienvenu. Si c'est juste une petite erreur (un mot mal orthographié ou une anomalie graphique, par exemple) passer au paragraphe suivant. Par contre, si vous voyez des erreurs, ou quelque chose qui est clairement cassé nous aurons besoin d'abord d'informations. S'il vous plaît, rendez-vous sur notre guide [Dépannage](https://zedx.io/docs/fr/troubleshooting) et suivez ses instructions. Recueillez autant d'informations que vous pouvez!
 
 Parfait, il est temps de passer à l'écriture. Retournez sur le [forum de soutien](http://discuss.zedx.io/t/bug) et commencez une nouvelle discussion. Assurez-vous de lui donner un titre clair et concis, ensuite expliquez en détail le problème. Ne pas oublier de mentionner:
 

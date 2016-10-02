@@ -1,6 +1,6 @@
 # Introduction
 
-ZEDx est gratuit, logiciel de petites annonces libre de droit avec un accent sur la simplicité. Vous pouvez utiliser ZEDx très facilement pour [créer un site Internet de petites annonces](https://zedx.io/docs/installation).
+ZEDx est gratuit, logiciel de petites annonces libre de droit avec un accent sur la simplicité. Vous pouvez utiliser ZEDx très facilement pour [créer un site Internet de petites annonces](https://zedx.io/docs/fr/installation).
 
 ZEDx est développé librement sur [GitHub](https://github.com/zedx/zedx).
 
@@ -12,14 +12,14 @@ ZEDx est développé librement sur [GitHub](https://github.com/zedx/zedx).
 
 - **Puissant et extensible.** Personnaliser, étendre et intégrer ZEDx comme vous le désirez. L'architecture de ZEDx est étonnamment souple parce que le front est basé sur des widgets.
 
-- ** Gratuit et ouvert.** ZEDx est publié sous la [licence MIT](https://github.com/zedx/zedx/blob/master/LICENSE).
+- ** Gratuit et ouvert.** ZEDx est publié sous la [licence MIT](https://github.com/zedx/docs/blob/fr/LICENSE).
 </div>
 
 ## Installation
 
 > **ZEDx est actuellement en version bêta et ne doit pas être utilisé en production.** Il est développé librement sur GitHub.
 
-Pour essayer ZEDx , aller à la page [Installation](https://zedx.io/docs/installation).
+Pour essayer ZEDx , aller à la page [Installation](https://zedx.io/docs/fr/installation).
 
 ## Equipe de développeur
 
