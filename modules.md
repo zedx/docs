@@ -193,7 +193,8 @@ php artisan module:make Blog -p
 <a name="creating-module-command-config"></a>
 ### Configuration
 
-1. Edit zedx.json file and feel free to describe your module by changin
+<div class="content-list" markdown="1">
+- Edit zedx.json file and feel free to describe your module by changin
 
 ```
 "title": "Module Title",
@@ -202,8 +203,9 @@ php artisan module:make Blog -p
 "keywords": ['key', 'words'],
 ```
 
-2. Change Module.php to customize your Install and Uninstall methods
-3. Set a beautiful screenshot of your module by replacing `screenshot.png`
+- Change Module.php to customize your Install and Uninstall methods
+- Set a beautiful screenshot of your module by replacing `screenshot.png`
+</div>
 
 <a name="creating-module-example"></a>
 ### Example
