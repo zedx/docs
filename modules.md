@@ -20,24 +20,24 @@ A module is a piece of software containing a group of functions that can be adde
 Modules/
   ├── Blog/
       ├── Config/
-          ├── config.php `Module configuration`
+          ├── config.php //Module configuration
       ├── Console/
       ├── Database/
-          ├── Migrations/ `Module migration files`
-          ├── Seeders/ `Module seeder files`
-      ├── Models/ `Contain your module database models`
+          ├── Migrations/ //Module migration files
+          ├── Seeders/ //Module seeder files
+      ├── Models/ //Contain your module database models
       ├── Http/
-          ├── Controllers/ `Contain your module controllers`
-          ├── Middleware/ `Contain your module middlewares`
-          ├── Requests/ `Contain your module middlewares`
-          ├── routes.php `Route file`
+          ├── Controllers/ //Contain your module controllers
+          ├── Middleware/ //Contain your module middlewares
+          ├── Requests/ //Contain your module middlewares
+          ├── routes.php //Route file
       ├── Providers/
-          ├── BlogServiceProvider.php `In most cases you should not change this file`
+          ├── BlogServiceProvider.php //In most cases you should not change this file
       ├── Repositories/
       ├── Resources/
           ├── assets/
-              ├── dist/ `Contain generated assets, the content of this folder will be placed in public directory when the module is published`
-              ├── src/ `Contain your source assets`
+              ├── dist/ //Contain generated assets, the content of this folder will be placed in publicdirectory when the module is published`
+              ├── src/ //Contain your source assets
           ├── lang/
           ├── views/
       ├── Tests/
@@ -45,11 +45,11 @@ Modules/
           ├── Backend/
           ├── Frontend/
       ├── composer.json
-      ├── Module.php `Helps you to customize the install, uninstall methods`
-      ├── screenshot.png `Your module screenshot`
+      ├── Module.php //Helps you to customize the install, uninstall methods
+      ├── screenshot.png //Your module screenshot
       ├── start.php
-      ├── task.js `Contain the list of assets that will be compilated via gulp`
-      ├── zedx.json `Module details`
+      ├── task.js //Contain the list of assets that will be compilated via gulp
+      ├── zedx.json //Module details
 ```
 
 
